@@ -5,7 +5,7 @@ This repository is part of the online material of `CHAPTER 7: Microlensing` of t
 
 1. Create a new environment:
    ```bash
-   conda create -n mb20135_env python=3.12
+   conda create -n mb20135_env python=3.10
    ```
 2. Activate the environment:
    ```bash
