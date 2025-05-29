@@ -21,6 +21,7 @@ This repository is part of the online material of `CHAPTER 7: Microlensing` of t
    pip install astropy==7.0.1
    pip install pandas==2.2.3
    pip install pyLIMA==1.9.8
+   pip install jasmine-astro
    ```
 
 ---
@@ -73,13 +74,20 @@ For more information, see the official [RTModel Documentation](https://github.co
 8. Optionally, plot any other model from the `Models` folder to explore different solution types.
 
 ---
+## 3.5 Obtain the microlensing parameters from the FinalModels files
 
+At the python prompt:
+1. from jasmine import ModelResults
+2. model = ModelResults(file_to_be_read='[your_path]/[Final]Models/LX0000-1.txt')
+3. print(model.model_type, model.model_extensive_name)
+4. print(model.model_parameters)
+
+---
 ## 4. MCMC with pyLIMA
-
 1. Open the notebook `running_pylima_mcmc.ipynb`.
 2. Locate the cell marked:  
    `[Action needed]: Insert the parameters for the best fit from your RTModel run`  
-   and replace it with the model parameters you obtained with RTModel.
+   and replace it with the model parameters you obtained using Jasmine to report the RTModel results.
 3. Run the initial cells to start the MCMC process. 
 4. In the `Results` section, run the cells to visualize results and save the best-fit model and MCMC chain to a folder.
 5. Run the cells in the `Plotting` section to visualize your light curve and the MCMC chain.
