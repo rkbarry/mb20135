@@ -20,6 +20,7 @@ This repository is part of the online material of `CHAPTER 7: Microlensing` of t
    pip install RTModel==2.4 
    pip install astropy==7.0.1
    pip install pandas==2.2.3
+   conda install python==3.10 
    pip install pyLIMA==1.9.8
    ```
 
